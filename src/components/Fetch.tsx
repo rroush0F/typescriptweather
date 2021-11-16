@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
 import Display from './Display'
 
-type Locate ={
+type Location ={
     latitude: number,
     longitude: number,
     city: string,
-    weather: any,
-    temperature: any,
+    weather: string,
+    temperature: number,
 };
 
-class Weather extends Component <{},Locate>{
+class Weather extends Component <{},Location>{
     constructor(props: any) {
         super(props)
         this.state ={
